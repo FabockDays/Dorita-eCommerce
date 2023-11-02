@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: blue;
+    background: black;
     font-family: 'Montserrat', sans-serif;
     color: white;
     -webkit-tap-highlight-color: transparent;

@@ -40,6 +40,7 @@ export const Card = styled.div`
   background: var(--gray-bg);
   border-radius: 15px;
   transition: background-color 0.3s ease;
+  
 
   &:hover {
     background-color: #ffa100;
@@ -50,12 +51,13 @@ export const CardImgContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  
  
 `;
 
 export const CardImg = styled.img`
   width: 100%;
-  height: 100%;
+  height: 210px;
   border-radius: 16px;
   object-fit: cover;
   transition: transform 0.3s ease;

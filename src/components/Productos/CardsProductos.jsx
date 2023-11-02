@@ -28,8 +28,8 @@ const CardsProductos = () => {
   return (
     <>
       <ProductosContainer>
-        {Object.entries(products).map(([_categery, foods]) =>
-          foods.map(product => {
+        {Object.entries(products).map(([_categery, clotes]) =>
+          clotes.map(product => {
             if (limit >= product.id || selectedCategory) {
               return <CardProducto key={product.id} {...product} />;
             } else return null;

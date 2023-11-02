@@ -27,7 +27,11 @@ export const ProductosCard = styled.div`
 
   img:hover{
 
-    transform: scale(1.1 );
+    transform: scale(1.2);
+    /* Adapt Telefono celular*/
+    @media (min-width: 320px) and (max-width: 425px){
+      transform: scale(1.5);
+    }
   }
 
   h2 {
