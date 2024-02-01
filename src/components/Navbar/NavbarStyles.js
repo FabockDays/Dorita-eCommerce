@@ -6,7 +6,7 @@ export const NavbarContainerStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
 
   
 `;
@@ -81,20 +81,24 @@ export const FollowUsContainerStyled =styled.div`
 
    /* Estilos para Tablets */
 
-  @media (max-width: 1024px) {
+  @media (max-width: 968px) {
     gap: 30px;
+    margin-right:20px;
+    
     
 
     .sign-wrap .sign_word {
-      font-size: 10px; 
-      line-height: 40px;
-      
+      display:none;    
     }
 
     img {
       width: 35px; 
       height: 35px;
+      margin-left:-25px;
     }
+
+   
+   
   }
 
   
@@ -126,10 +130,9 @@ export const OfferButtonStyled = styled.a`
   border: 2px solid #fe7821;
   
   /* Adapt Telefono celular}*/
-  @media (min-width: 320px) and (max-width: 425px){
+  @media (max-width: 968px){
     padding: 0.3rem 0.5rem;
-    margin-left: 15px;
-    
+  
   }
 
   a {
@@ -164,13 +167,17 @@ export const LinksContainerStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
+  @media (max-width: 968px){
+    gap:40px;
+    
+   
   
-  
-  
+  }
 
   a {
     padding: 0.4rem 1.5rem;
+    
     
   }
 
@@ -181,13 +188,15 @@ export const LinksContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
     gap: 3px;
 
     /* Adapt Telefono celular*/
-    @media (min-width: 320px) and (max-width: 425px){
+    @media (max-width: 968px){
       width: 25px;
       height:15px;
-      margin-left: 10px;
+      margin-left:10px;
+      
    }
   }
 `;
@@ -196,9 +205,6 @@ export const LinkContainerStyled = styled.div`
   margin-top: 2px;
   font-size: 1.4rem;
   color: ${props => (props.home ? '#fe7821' : '#fe7821')};
-
-  
-  
   
 `;
 
@@ -227,12 +233,12 @@ export const CartNavStyled = styled.div`
 `;
 
 export const UserNavStyled = styled.div`
-  gap: 15px;
+  gap: 10px;
   cursor: pointer;
   span {
     color: white;
     font-size: 1rem;
-    margin-right: 20px;
+    margin-right: 15px;
   }
 `;
 

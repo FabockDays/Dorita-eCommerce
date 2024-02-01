@@ -7,11 +7,6 @@ export const LayoutWrapper = styled.div`
   flex-direction: column;
   background: black;
   
-  /* Adapt Celular*/
 
-  @media (min-width: 320px) and (max-width: 425px) {
-   width: 170vw;
-    
-  }
 
 `;

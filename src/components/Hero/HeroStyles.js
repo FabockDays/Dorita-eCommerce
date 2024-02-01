@@ -5,9 +5,9 @@ export const HeroContainerStyled = styled.div`
   justify-content: space-between;
   background: black;
   margin-top: 10px;
-  
-  
-  
+  flex-direction: column;
+  align-items:center;
+  gap: 20px;
   
 
   h1 {
@@ -19,11 +19,8 @@ export const HeroContainerStyled = styled.div`
     color:#fff;
     max-width: 400px;
     font-size: 25px;
-   
+    margin-top:40px;
     
-    
-    
-  
   }
 
   /* Estilos para Tablets */
@@ -33,21 +30,8 @@ export const HeroContainerStyled = styled.div`
     h1{
       max-width: 250px;
       font-size: 25px;
-   
     }
     
-  }
-
-  /* Estilos para Telefono */
-
-   @media (max-width: 375px) {
-    
-
-    h1 {
-      max-width: 100%;
-    }
-
-
 }
 `;
 
@@ -56,6 +40,7 @@ export const HeroFormStyled = styled.form`
   gap: 10px;
   margin-top: 70px;
   max-width: 400px;
+  margin-bottom:50px;
 
   
   /* Estilos para Tablets */
@@ -105,16 +90,12 @@ export const HeroBtnStyled = styled.input`
 
 export const AccordionStyled = styled.div`
 
-@media (min-width: 320px) and (max-width: 425px){
-  display: none;
-}
-
 .accordion {
   width: 90%;
   max-width: 1080px;
   height: 250px;
   overflow: hidden;
-  margin: 0px 0px 0px 90px;
+  margin:0px 0px 0px 50px;
   border: 2px solid gray;
   border-radius: 10px;
   
@@ -124,7 +105,9 @@ export const AccordionStyled = styled.div`
   max-width: 380px;
   height: 240px;
 
-}
+  }
+
+
 }
 
 
@@ -232,23 +215,22 @@ export const AccordionStyled = styled.div`
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  body { margin: 0; }
 
-body { margin: 0; }
+  .accordion { display:none; }
 
-.accordion { height: auto; }
-
-.accordion ul li,
-.accordion ul li:hover,
-.accordion ul:hover li,
-.accordion ul:hover li:hover {
-  position: relative;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  -webkit-transition: none;
-  transition: none;
-}
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 .about {

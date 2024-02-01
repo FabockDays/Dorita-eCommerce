@@ -52,9 +52,9 @@ function Navbar() {
       )}
 
       <LinksContainerStyled>
-        <motion.div whileTap={{ scale: 0.97 }}>
+        <motion.div  whileTap={{ scale: 0.97 }}>
           <Link to="/">
-            <LinkContainerStyled home>
+            <LinkContainerStyled home >
               <HiOutlineMenu />
             </LinkContainerStyled>
             Home
@@ -69,7 +69,7 @@ function Navbar() {
           <UserContainerStyled
             onClick={() => (currentUser ? dispatch(toggleHiddenMenu()) : navigate('/register'))}
           >
-            <SpanStyled>{currentUser ? `${currentUser.nombre}` : 'Inicia sesión'}</SpanStyled>
+            <SpanStyled>{currentUser ? `${currentUser.nombre}` : 'Login'}</SpanStyled>
             <FaUserAlt />
           </UserContainerStyled>
         </UserNavStyled>

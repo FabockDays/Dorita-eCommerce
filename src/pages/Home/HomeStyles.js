@@ -3,14 +3,15 @@ import styled from 'styled-components';
 export const HomeWrapper = styled.div`
   width: 90vw;
   max-width: 1600px;
-  padding: 2rem;
-  margin: 20px auto;
+  margin: auto;
   background: black;
   
   /* Adapt Telefono celular*/
-  @media (max-width: 375px){
+  @media (min-width: 320px) and (max-width: 425px){
     margin-left: 15%;
     width: 100vw;
+
+  
 
   }
 
