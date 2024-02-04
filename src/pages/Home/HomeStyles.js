@@ -1,19 +1,14 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
-  width: 90vw;
-  max-width: 1600px;
+  width: 100vw;
   margin: auto;
   background: black;
-  
-  /* Adapt Telefono celular*/
-  @media (min-width: 320px) and (max-width: 425px){
-    margin-left: 15%;
-    width: 100vw;
+  align-items: center;
+  justify-content:center;
 
-  
+ 
 
-  }
 
   .ref{
     font-weight: 400;

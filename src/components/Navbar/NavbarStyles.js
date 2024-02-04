@@ -8,6 +8,10 @@ export const NavbarContainerStyled = styled.div`
   align-items: center;
   padding: 0.5rem 1rem;
 
+  @media only screen and (min-width: 320px) and (max-width: 425px){
+    padding:0px;
+    
+  }
   
 `;
 
@@ -18,7 +22,10 @@ export const FollowUsContainerStyled =styled.div`
   flex-direction: row;
   gap: 80px;
   
-
+  @media only screen and (min-width: 320px) and (max-width: 425px){
+    gap:0px;
+    object-fit:cover;
+  }
   
   
   .sign-wrap .sign_word{
@@ -72,7 +79,9 @@ export const FollowUsContainerStyled =styled.div`
 
   img{
     width: 50px;
-    height: 50px;
+    height:50px;
+   
+
   }
 
   img:hover{
@@ -81,20 +90,20 @@ export const FollowUsContainerStyled =styled.div`
 
    /* Estilos para Tablets */
 
-  @media (max-width: 968px) {
-    gap: 30px;
-    margin-right:20px;
+  @media (max-width: 768px) {
+    gap: 10px;
+    
     
     
 
     .sign-wrap .sign_word {
-      display:none;    
+      display:none;   
     }
 
     img {
       width: 35px; 
       height: 35px;
-      margin-left:-25px;
+      
     }
 
    
@@ -129,8 +138,8 @@ export const OfferButtonStyled = styled.a`
   border-radius: 1rem;
   border: 2px solid #fe7821;
   
-  /* Adapt Telefono celular}*/
-  @media (max-width: 968px){
+  /* Adapt TAblet*/
+  @media (max-width: 768px){
     padding: 0.3rem 0.5rem;
   
   }
@@ -167,9 +176,18 @@ export const LinksContainerStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
   gap: 60px;
-  @media (max-width: 968px){
-    gap:40px;
+
+   
+  @media only screen and (min-width: 320px) and (max-width: 425px){
+    gap:0px;    
+  }
+  
+
+
+  @media (max-width: 768px){
+    gap:25px;
     
    
   
@@ -177,6 +195,10 @@ export const LinksContainerStyled = styled.div`
 
   a {
     padding: 0.4rem 1.5rem;
+    @media only screen and (min-width: 320px) and (max-width: 425px){
+      background-color:red;
+      
+    }
     
     
   }
@@ -191,8 +213,8 @@ export const LinksContainerStyled = styled.div`
     color:white;
     gap: 3px;
 
-    /* Adapt Telefono celular*/
-    @media (max-width: 968px){
+    /* Adapt Tablet*/
+    @media (max-width: 768px){
       width: 25px;
       height:15px;
       margin-left:10px;
@@ -206,11 +228,13 @@ export const LinkContainerStyled = styled.div`
   font-size: 1.4rem;
   color: ${props => (props.home ? '#fe7821' : '#fe7821')};
   
+  
 `;
 
 export const UserContainerStyled = styled(LinkContainerStyled)`
   display: flex;
   align-items: center;
+  gap:15px;
 `;
 
 export const CartNavStyled = styled.div`
@@ -224,10 +248,9 @@ export const CartNavStyled = styled.div`
     height: 20px;
     width: 20px;
     text-align: center;
-
+    background-color:red;
     border-radius: 1rem;
     color: white;
-    background-color: red;
     font-size: 0.9rem;
   }
 `;
@@ -238,7 +261,8 @@ export const UserNavStyled = styled.div`
   span {
     color: white;
     font-size: 1rem;
-    margin-right: 15px;
+    
+    
   }
 `;
 

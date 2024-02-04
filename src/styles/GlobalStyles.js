@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
     :root {
-    --orange-bg: #2f2618;
+    ---bg: #2f2618;
     --orange: #ff9d01;
     --magenta: #FF005C;
     --gray-bg: #2b2b2c;
@@ -23,11 +23,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     color: white;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden
+    overflow-x: hidden;
+    display:flex;
+    width:100%;
     
-
-
-
   }
 
     a {

@@ -32,7 +32,6 @@ export const FoundTextStyled = styled.div`
   }
 
   @media (min-width: 320px) and (max-width: 425px){
-    margin-right: 250px;
     margin-top: 100px;
   }
 
