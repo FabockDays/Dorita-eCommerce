@@ -8,6 +8,7 @@ export const ProductStyled = styled.div`
   padding: 1.5rem 1rem;
   width: 90%;
   max-width: 620px;
+
 `;
 
 export const ProductLeftStyled = styled.div`
@@ -15,12 +16,15 @@ export const ProductLeftStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  
 `;
 
 export const PriceContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  
+ 
 `;
 
 export const ProductPriceStyled = styled.span`
@@ -29,4 +33,5 @@ export const ProductPriceStyled = styled.span`
   background: var(--btn-gradient);
   -webkit-background-clip: text;
   color: transparent;
+  
 `;

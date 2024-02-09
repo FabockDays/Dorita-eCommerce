@@ -127,6 +127,8 @@ export const ModalOverlayStyled = styled(motion.div)`
     css`
       backdrop-filter: blur(4px);
     `}
+
+    
 `;
 
 export const OfferButtonStyled = styled.a`
@@ -194,13 +196,7 @@ export const LinksContainerStyled = styled.div`
   }
 
   a {
-    padding: 0.4rem 1.5rem;
-    @media only screen and (min-width: 320px) and (max-width: 425px){
-      background-color:red;
-      
-    }
-    
-    
+    padding: 0.4rem 1.5rem;    
   }
 
   a:first-child {

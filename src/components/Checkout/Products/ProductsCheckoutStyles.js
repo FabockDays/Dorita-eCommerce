@@ -2,11 +2,16 @@ import styled from 'styled-components';
 
 export const ProductosContainerStyled = styled.div`
   width: 40%;
+  @media only screen and (min-width: 320px) and (max-width: 425px){
+    width:80%;
+    margin-left:50px;
+  }
 `;
 
 export const ProductsTitleStyled = styled.h2`
   font-weight: 500;
   font-size: 22px;
+  
 `;
 
 export const CardsWrapperStyled = styled.div`
@@ -14,7 +19,7 @@ export const CardsWrapperStyled = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
-
+  
   width: 80%;
   height: 440px;
   margin: 0 auto;
@@ -34,6 +39,7 @@ export const CardsWrapperStyled = styled.div`
   &::-webkit-scrollbar:horizontal {
     display: none;
   }
+ 
 
   @media (max-height: 800px) {
     height: 270px;
@@ -81,5 +87,6 @@ export const PriceTotalStyled = styled.span`
 export const HrStyled = styled.hr`
   margin: 1rem 0;
   border-color: #fe7821;
+ 
   
 `;

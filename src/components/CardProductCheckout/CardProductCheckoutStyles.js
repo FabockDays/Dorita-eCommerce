@@ -53,4 +53,7 @@ export const PriceStyled = styled.span`
 export const QuantityContainerStyled = styled.span`
   display: flex;
   align-items: center;
+  @media only screen and (min-width: 320px) and (max-width: 425px){
+    flex-direction: column-reverse;
+  }
 `;
